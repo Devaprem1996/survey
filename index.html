@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Interest Survey Form</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+            color: white;
+            width: 50%;
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 25px 0;
+
+
+        }
+
+        form {
+            border: 2px solid white;
+            margin-top: 50px;
+            padding: 0%;
+        }
+
+        fieldset {
+            border: none;
+            padding: 15px 0;
+        }
+
+        .btn {
+            width: 250px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 5px;
+            font-size: small;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Employee Interests Survey Form</h1>
+    </header>
+    <main>
+        <form class="survey" action="">
+
+            <fieldset>
+                <label for="name">Enter your name: <input type="text" placeholder="devaprem" name="name"
+                        required></label>
+                <br><br><br>
+                <label for="department">Enter your department: <input type="text" placeholder="BPO"></label>
+                <br><br><br>
+                <label for="textarea">Tell us a little about yourself:</label>
+                <textarea name="about-self" id="about" cols="20" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="exercise"> Do you exercise at Home?</label><br><br>
+                <input type="radio" name="workout" id="yes">yes
+                <input type="radio" name="workout" id="No">No
+                <br><br>
+
+                <label for="topics">How do you like to ride about your favorite topics?</label><br><br>
+
+                <input type="checkbox" id="fav-top">Books
+                <input type="checkbox" id="fav-top">Online resources
+                <input type="checkbox" id="fav-top">Phone apps
+                <input type="checkbox" id="fav-top">Maganizes
+                <br><br><br>
+
+
+                <label for="select">What genre of movies do you like?</label>
+                <select class="movies">
+                    <option value="comedy"> Comedy</option>
+                    <option value="action">Action</option>
+                    <option value="thriller">Thriller</option>
+                </select><br>
+            </fieldset>
+
+            <button class="btn" value="Submit">Submit form</button>
+
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>
